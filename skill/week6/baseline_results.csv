@@ -1,0 +1,21 @@
+﻿Question_ID,Question,Expected_Answer,LLM_Answer,Matched_Keywords,Missing_Keywords,Score,Status,Source,Model,Release
+Q001,What is tokenization in large language models?,Tokenization is the process of splitting input text into smaller units called tokens.,"Tokenization is a crucial step in the processing of large language models. It involves breaking down input text into individual units called tokens. Tokens can be words, subwords, or even characters, depending on the specific model and its architecture.
+
+In the context of large language models, tokenization is used to convert the input text into a format that the model can understand and process. Here's a breakdown of the tokenization process:
+
+1. **Wordpiece tokenization**: This is a common technique used in many large language models, including BERT and RoBERTa. It involves splitting words into subwords, also known as wordpieces. Wordpieces are smaller units that represent a word, such as ""un"" and ""der"" for the word ""under"".
+2. **Character-level tokenization**: This involves breaking down the input text into individual characters. This is often used in models that require a high degree of granularity, such as in text classification or sentiment analysis tasks.
+3. **Subword tokenization**: This involves splitting words into subwords, which are smaller units that represent a word. Subword tokenization is often used in models that require a high degree of flexibility, such as in machine translation tasks.
+
+The benefits of tokenization in large language models include:
+
+1. **Improved handling of out-of-vocabulary words**: Tokenization allows the model to handle words that are not in its vocabulary by representing them as subwords or wordpieces.
+2. **Increased efficiency**: Tokenization can reduce the computational complexity of the model by reducing the number of tokens that need to be processed.
+3. **Better handling of punctuation and special tokens**: Tokenization allows the model to handle punctuation and special tokens, such as @ and #, as separate tokens.
+
+However, tokenization also has some limitations and challenges, such as:
+
+1. **Over-tokenization**: Tokenization can result in over-tokenization, where the input text is broken down into too many tokens, leading to decreased performance.
+2. **Under-tokenization**: Tokenization can also result in under-tokenization, where the input text is not broken down into enough tokens, leading to decreased performance.
+
+Overall, tokenization is a critical step in the processing of large language models, and its choice of tokenization scheme can significantly impact the performance of the model.","splitting, text, tokens",,100.0,PASS,https://huggingface.co/docs/transformers/en/tokenizer_summary,llama3.2,v0.1
